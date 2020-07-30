@@ -1,0 +1,43 @@
+.jumbotron{
+    background-color: #ff4136 !important;
+    color: #fff !important;
+}
+.jumbotron a{
+    color: #fff !important;
+}
+.control-buttons{
+    width: 9rem;
+    background-color: transparent;
+    border-radius: 5px !important;
+    border: 1px solid #fff;
+}
+.clock-display{
+    font-size: 500%;
+    letter-spacing: 5px !important;
+}
+.task-display{
+    font-size: 130%;
+    font-weight: 300;
+}
+.navbar-brand{
+    font-size: 140%;
+    font-weight: 500;
+}
+.todolist{
+    font-weight: bold;
+}
+.description input{
+    display: block;
+    width: 100%;
+    margin: 5% 0;
+    border-radius: 0 !important;
+    border: 1px solid #c3c3c3;
+    height: 45px;
+    padding-left: 4%;
+}
+.description input::placeholder{
+    text-align: center;
+}
+.description input:focus{
+   outline: none;
+}

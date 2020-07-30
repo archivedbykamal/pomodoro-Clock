@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro clock</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="jumbotron">
+
+    <nav class="navbar navbar-expand-sm fixed-top mt-4">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand mr-auto ml-5">Pomodoro</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target= "#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+           
+         
+            <div class="navbar-collapse collapse" id="Navbar">
+                <ul class="navbar-nav ml-auto">
+                    <!-- Notification bell -->
+                    <li class="nav-item"><a href="#" class="nav-link"><span class="fa fa-list fa-lg"></span>Menu</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- display clock -->
+    <div class="row mt-0">
+        <div class="col-12 text-center clock-display">
+            25:00
+        </div>
+    </div>
+        <!-- Task display -->
+        <div class="row">
+            <div class="col-12 text-center task-display my-4">
+                Clear the garden
+            </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 text-center">
+            <div class="btn-group" role="group">
+                <a href="#" role="button" class="btn mr-2 control-buttons">START</a>
+                <a href="#" role="button" class="btn ml-4 control-buttons">STOP</a>
+            </div>
+        </div>
+    </div>
+    </header>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <header class="todolist text-center">TO DO LIST</header>
+            </div>
+        </div>
+
+        <!-- <div class="row justify-content-center">
+            <div class="col-2">
+                <header>Role</header>
+                <div class="d-block my-3">
+                    <div class="custom-control custom-radio">
+                      <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+                      <label class="custom-control-label" for="credit">Credit card</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                      <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+                      <label class="custom-control-label" for="debit">Debit card</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                      <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+                      <label class="custom-control-label" for="paypal">PayPal</label>
+                    </div>
+                  </div>            </div>
+            <div class="col-4 description">
+                <header>Description</header>
+                <input type="text" placeholder="Clear the garden">
+                <input type="text" placeholder="Send email to my boss">
+                <input type="text" placeholder="Bid for jobs on Upwork">
+            </div>
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-3">
+                        Session Length
+                    </div>
+                    <div class="col-3">
+                        Break Length
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        
+    </div>
+</body>
+</html>
