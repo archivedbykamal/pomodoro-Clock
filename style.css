@@ -26,18 +26,32 @@
 .todolist{
     font-weight: bold;
 }
-.description input{
+.content header{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="number"]{
     display: block;
     width: 100%;
-    margin: 5% 0;
     border-radius: 0 !important;
     border: 1px solid #c3c3c3;
-    height: 45px;
+    height: 35px;
     padding-left: 4%;
 }
-.description input::placeholder{
+
+input::placeholder{
     text-align: center;
 }
-.description input:focus{
+ input:focus{
    outline: none;
+}
+.d label{
+    width: 100%;
+    border-radius: 2px;
+    border: 1px solid #c3c3c3;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    display: inline-block;
 }

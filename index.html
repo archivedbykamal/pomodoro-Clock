@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pomodoro clock</title>
+    <script src="https://kit.fontawesome.com/a1db76437d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./bootstrap.min.css">
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -21,7 +22,7 @@
             <div class="navbar-collapse collapse" id="Navbar">
                 <ul class="navbar-nav ml-auto">
                     <!-- Notification bell -->
-                    <li class="nav-item"><a href="#" class="nav-link"><span class="fa fa-list fa-lg"></span>Menu</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-bell fa-2x"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -50,48 +51,74 @@
     </div>
     </header>
     
-    <div class="container">
-        <div class="row">
+    <div class="container d-none d-md-block">
+        <div class="row ">
             <div class="col-12">
                 <header class="todolist text-center">TO DO LIST</header>
             </div>
         </div>
+        <div class="row d">
 
-        <!-- <div class="row justify-content-center">
+
             <div class="col-2">
-                <header>Role</header>
+                <header class="text-center">Role</header>
                 <div class="d-block my-3">
-                    <div class="custom-control custom-radio">
-                      <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
-                      <label class="custom-control-label" for="credit">Credit card</label>
+                    <div class="custom-control custom-radio mb-3">
+                      <input id="task1" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+                      <label class="custom-control-label" for="task1">Personal</label>
+                    </div>
+                    <div class="custom-control custom-radio mb-3">
+                      <input id="task2" name="paymentMethod" type="radio" class="custom-control-input" required>
+                      <label class="custom-control-label" for="task2">Work</label>
                     </div>
                     <div class="custom-control custom-radio">
-                      <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
-                      <label class="custom-control-label" for="debit">Debit card</label>
+                      <input id="task3" name="paymentMethod" type="radio" class="custom-control-input" required>
+                      <label class="custom-control-label" for="task3">Work</label>
                     </div>
-                    <div class="custom-control custom-radio">
-                      <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
-                      <label class="custom-control-label" for="paypal">PayPal</label>
-                    </div>
-                  </div>            </div>
-            <div class="col-4 description">
-                <header>Description</header>
-                <input type="text" placeholder="Clear the garden">
-                <input type="text" placeholder="Send email to my boss">
-                <input type="text" placeholder="Bid for jobs on Upwork">
+                  </div>          
             </div>
+
+
+            <div class="col-4 description">
+                <header class="text-center">Description</header>
+                <div class="my-3">
+                <input type="text" class="mb-3" placeholder="Clear the garden">
+                <input type="text" class="mb-3" placeholder="Send email to my boss">
+                <input type="text" placeholder="Bid for jobs on Upwork">
+                </div>
+            </div>
+
+
             <div class="col-6">
                 <div class="row">
-                    <div class="col-3">
-                        Session Length
+                    <div class="col-3 text-center">
+                        <header  class="text-center">Session Length</header>
+                        <div class="my-3">
+                        <input type="number" class="mb-3" name="breakLength" placeholder="25 minutes" id="">
+                        <input type="number" class="mb-3" name="breakLength" placeholder="25 minutes" id="">
+                        <input type="number" name="breakLength" placeholder="25 minutes" id="">
+                        </div>
                     </div>
-                    <div class="col-3">
-                        Break Length
+                    <div class="col-3 text-center">
+                        <header class="text-center">Break Length</header>
+                        <div class="my-3">
+                            <input type="number" class="mb-3" name="breakLength" placeholder="5 minutes" id="">
+                            <input type="number" class="mb-3" name="breakLength" placeholder="5 minutes" id="">
+                            <input type="number" name="breakLength" placeholder="5 minutes" id="">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div> -->
-        
+        </div>
     </div>
+
+
+    <div class="container">
+    <input type="checkbox" id="sessionbox">
+        <label for="sessionbox">Notify me at the end of each session</label>
+    <br>
+        <input type="checkbox" id="breakbox">
+        <label for="breakbox">Notify me at the end of each break</label>
+      </div>
 </body>
 </html>
